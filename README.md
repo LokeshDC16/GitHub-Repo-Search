@@ -1,3 +1,6 @@
+Link to Website Hosted on AWS - 
+http://ec2-13-233-155-40.ap-south-1.compute.amazonaws.com:3000/
+
 # GitHub-Repo-Search
 GitHub Repo Search is a web application that allows users to search for a GitHub user's public repositories and view relevant information.
 
