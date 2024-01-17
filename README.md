@@ -39,6 +39,9 @@ npm start
 
 Usage
 Enter a GitHub username in the search bar.
+
 Click the "Search" button to fetch the user's repositories.
+
 View the user's profile information and the paginated list of repositories.
+
 Navigate through the pages using the "Previous" and "Next" buttons.
