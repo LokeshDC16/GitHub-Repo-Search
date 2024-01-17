@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GitHub Repo Search</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>GitHub Repo Search</h1>
+        <div class="search-bar">
+            <label for="username">Enter GitHub Username:</label>
+            <input type="text" id="username" placeholder="e.g., octocat" required>
+            <!-- Add a validation message container -->
+            <div id="username-validation-message" class="error-message"></div>
+            <button onclick="searchRepositories()">Search</button>
+        </div>
+    </header>
+    <section class="profile-section">
+        <div class="profile">
+            <img id="profile-image" src="" alt="Profile Image">
+            <div class="profile-details">
+                <h2 id="profile-name"></h2>
+                <p id="profile-bio"></p>
+                <p id="profile-location"></p>
+                <a id="profile-twitter" href="#" target="_blank">Twitter</a>
+                <a id="profile-github" href="#" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+    <section class="main-content">
+        <div id="repositories" class="repositories"></div>
+        <div class="pagination">
+            <button onclick="previousPage()">Previous</button>
+            <span id="page-number">Page 1</span>
+            <button onclick="nextPage()">Next</button>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
